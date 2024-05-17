@@ -3,6 +3,7 @@ package abled.tstory.mvc
 import abled.tstory.mvc.databinding.ActivityMainBinding
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 
 class MainActivity : AppCompatActivity() {
 
@@ -28,5 +29,6 @@ class MainActivity : AppCompatActivity() {
             binding.textViewCount.text = model.total.toString()
             binding.textViewTotalPrice.text = model.getTotalPrice().toString()+"원"
         }
+
     }
 }
